@@ -75,3 +75,10 @@ input.radio1{
 .nutkt:hover{
 background-color: rgb(31, 187, 187);
 }
+@media (max-width:576px){
+    .head{
+        width:576px;
+        margin: auto;
+        margin-left: 93px;
+    }
+}
