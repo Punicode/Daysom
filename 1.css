@@ -1,6 +1,27 @@
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: rgb(211, 216, 216);
+    position: relative;
+}
+.sign_in{
+    width:400px;
+    margin: auto;
+    font-size: 20px;
+    font-weight: bold;
+}
+.sign_in input{
+    padding: 15px;
+    border-radius: 10px;
+}
+#button_pass:hover{
+    background-color: aqua;
+}
+.hello{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    color:green;
+    padding-bottom: 50px;
 }
 .head{  
     display: block;
@@ -23,7 +44,7 @@ body{
     background-size: 119%;
     margin-bottom: 20px;
     border-radius: 30px;
-
+    display: none;
 }
 input.nut1{
     background-color: rgb(187, 199, 199);
@@ -108,6 +129,13 @@ background-color: rgb(31, 187, 187);
     }
     .head img{
         margin-left: -49px;
+    }
+    .sign_in{
+        margin-left:180px;
+    }
+    .hello{
+        width: 100%;
+        margin-left: 194px;
     }
 }
 

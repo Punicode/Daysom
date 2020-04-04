@@ -107,3 +107,14 @@ function doiborder(){
         document.getElementById("nut10").style.padding = "20px";
     }
 }
+function password(){
+    var ten = document.getElementById("text_pass").value;
+    if(ten =="Tuấn"||ten=="Hạnh"||ten=="Hùng"||ten=="Đạt"||ten=="Anh"){
+        document.getElementById("sign_in").style.display="none";
+        document.getElementById("container").style.display="block";
+        document.getElementById("hello").innerHTML = "Chào " +ten+" ! Chúc "+ten+" một ngày tốt lành!";
+    }
+    else{
+        document.getElementById("tag_h6").innerHTML="sai pass";
+    }
+}
