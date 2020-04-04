@@ -6,74 +6,95 @@ body{
     display: block;
     margin: auto;
     text-align: center;
-    margin-bottom: 70px;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+.head img{
+    width:700px;
 }
 .container{
-    width:730px;
+    width: 800px;
     height: 1100px;
     margin: auto;
     justify-content: space-between;
-    background-color: rgb(122, 211, 211);
+    background-repeat: no-repeat;
+    background-image: url(notebook.jpg);
+    background-position: -67px -70px;
+    background-size: 119%;
     margin-bottom: 20px;
     border-radius: 30px;
+
 }
 input.nut1{
-    background-color: aqua;
+    background-color: rgb(187, 199, 199);
     width:550px;
     padding:20px;
-    border-radius: 30px;
+    border-radius: 20px;
     font-weight: bold;
+    font-style: italic;
     text-align: center;
     font-size: 20px;
-    margin-top: 30px;
+    margin-top: 35px;
+    border: navajowhite;
 }
 .khoi{
-    margin-left:50px;
+    margin-left: 99px;
 }
 input.radio1{
         width: 50px;
         height: 50px;
         position: absolute;
         border-radius: 5px;
-        margin-top: 37px;
+        margin-top: 43px;
         margin-left: 30px;
         border-radius: 3px!important;
+}
+.nutkt{
+    display: block;
+    margin: auto;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: rgb(187, 199, 199);
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 15px;
+    transition: 0.4s;
+    font-style: italic;
+    transition: 0.4s;
+    border: solid red;
+}
+
+#nutx1{
+    position: absolute;
+    top: -1px;
+    right: 23px;
+    font-weight: bold;
+    font-size: 17px;
+    background-color: rgb(70, 9, 9);
+    color: aliceblue;
+}
+.nutkt:hover{
+background-color: rgb(31, 187, 187);
+}
+.nut1:hover{
+    background-color: rgb(219, 230, 230);
 }
 #information1{
     text-align: center;
     width:400px;
     height: 200px;
     margin: auto;
-    background-color: rgb(116, 202, 105);
+    background-image: url(info.png);
+    background-size: 115%;
+    background-position: -30px -101px;
     border-radius: 30px;
     font-weight: bold;
     font-size: 23px;
     padding-top: 45px;
-   position: relative;
-   display: none;
-   transition: 10s;
-}
-#nutx1{
-    position: absolute;
-    top: 13px;
-    right: 14px;
-    font-weight: bold;
-    font-size: 20px;
-    background-color: rgb(13, 241, 6);
-}
-.nutkt{
-    display: block;
-    margin: auto;
-    padding: 10px;
-    border-radius: 20px;
-    background-color: rgb(9, 255, 0);
-    font-size: 30px;
-    font-weight: bold;
-    margin-top: 60px;
-    transition: 0.4s;
-}
-.nutkt:hover{
-background-color: rgb(31, 187, 187);
+    position: relative;
+    display: none;
+    transition: 10s;
+    color: rgb(100, 14, 14);
 }
 @media (max-width:576px){
     .head{
@@ -82,6 +103,11 @@ background-color: rgb(31, 187, 187);
         margin-left: 93px;
     }
     #information1{
-        margin-left: 181px;
+        margin-left: 172px;
+        margin-top: 100px;
+    }
+    .head img{
+        margin-left: -49px;
     }
 }
+
