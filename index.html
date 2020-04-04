@@ -11,8 +11,16 @@
         <img src="succêd.png" alt="">
     </div>
         <div class="sign_in" id="sign_in">
-                <span>Password: </span>
-                <input id="text_pass" type="text" placeholder="Nhập pass">
+                <table>
+                        <tr>
+                                <td><span>Your name:</span></td>
+                                <td><input id="text_name" type="text" placeholder="Nhập tên"></td>
+                        </tr>
+                        <tr>
+                                <td><span>Password: </span></td>
+                                <td><input id="text_pass" type="text" placeholder="Nhập pass"> </td>
+                        </tr>
+                </table>  
                 <input type="button" name="" id="button_pass" value="Sign in"onclick="password()">
                 <h6 id="tag_h6" style="color:red"></h5>
         </div>
@@ -47,7 +55,7 @@
                 <input type="checkbox"class="radio1"id="check5"onclick="doiborder()">
         </div>
         <div class="khoi">
-                <input id="nut6" type="button" class="nut1"value="Tự nấu một bữa ăn sáng đàng hoàng">
+                <input id="nut6" type="button" class="nut1"value="Tự nấu một bữa ăn sáng đàng hoàng"onclick="khoi3(0)">
                 <input type="checkbox"class="radio1"id="check6"onclick="doiborder()">
         </div>
         <div class="khoi">
@@ -85,6 +93,32 @@
                 chiếu tươm tất, thơm tho bạn sẽ có cảm giác được quan tâm, chăm sóc, từ đó giúp nâng cao tâm trạng.</li>
         </ul>
     </div>
+<div class="an_sang" id="an_sang">
+        <div class="com_rang">
+                <img src="comrang2.jpg" alt="">
+                <h2>Cơm Rang</h2>
+        </div>
+        <div class="chao">
+                <img src="chao2.jpg" alt="">
+                <h2>Cháo</h2>
+        </div>
+        <div class="banh_mi">
+                <img src="banh_mi.png" alt="">
+                <h2>Bánh mì</h2>
+        </div>
+        <div class="xoi">
+                <img src="xoi.jpg" alt="">
+                <h2>Xôi thịt</h2>
+        </div>
+        <div class="pho">
+                <img src="canh_ca.jpg" alt="">
+                <h2>Phở</h2>
+        </div>
+        <div class="mi">
+                <img src="mi_tom.jpg" alt="">
+                <h2>Mì</h2>
+        </div>
+</div>
     <script src="1.js"></script>
 </body>
 </html>

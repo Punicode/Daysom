@@ -108,8 +108,9 @@ function doiborder(){
     }
 }
 function password(){
-    var ten = document.getElementById("text_pass").value;
-    if(ten =="Tuấn"||ten=="Hạnh"||ten=="Hùng"||ten=="Đạt"||ten=="Anh"){
+    var pass = document.getElementById("text_pass").value;
+    var ten=document.getElementById("text_name").value;
+    if(pass=="04042020"){
         document.getElementById("sign_in").style.display="none";
         document.getElementById("container").style.display="block";
         document.getElementById("hello").innerHTML = "Chào " +ten+" ! Chúc "+ten+" một ngày tốt lành!";
@@ -125,6 +126,16 @@ function khoi2(a) {
     }
     else {
         document.getElementById("don_giuong").style.display = "none";
+        document.getElementById("container").style.display = "block";
+    }
+}
+function khoi3(a) {
+    if (a == 0) {
+        document.getElementById("an_sang").style.display = "flex";
+        document.getElementById("container").style.display = "none";
+    }
+    else {
+        document.getElementById("an_sang").style.display = "none";
         document.getElementById("container").style.display = "block";
     }
 }

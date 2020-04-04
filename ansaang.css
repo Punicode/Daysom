@@ -1,0 +1,47 @@
+.an_sang{
+    width:650px;
+    margin: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.an_sang img{
+    width:300px;
+    margin: auto;
+    border-radius: 20px;
+    border: solid gray;
+    height: 200px;
+}
+.an_sang img:hover{
+    border: solid green;
+}
+.an_sang h2{
+    margin-top: 0px;
+    transition: 0.5s;
+}
+.com_rang:hover h2{
+    color:green;
+    transform: scale(1.1);
+}
+.chao:hover h2{
+    color:green;
+    transform: scale(1.1);
+}
+.banh_mi:hover h2{
+    color:green;
+    transform: scale(1.1);
+}
+.xoi:hover h2{
+    color:green;
+    transform: scale(1.1);
+}
+.pho:hover h2{
+    color:green;
+    transform: scale(1.1);
+}
+.mi:hover h2{
+    color:green;
+    transform: scale(1.1);
+}
