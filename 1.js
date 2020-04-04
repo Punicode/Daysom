@@ -118,3 +118,13 @@ function password(){
         document.getElementById("tag_h6").innerHTML="sai pass";
     }
 }
+function khoi2(a) {
+    if (a == 0) {
+        document.getElementById("don_giuong").style.display = "block";
+        document.getElementById("container").style.display = "none";
+    }
+    else {
+        document.getElementById("don_giuong").style.display = "none";
+        document.getElementById("container").style.display = "block";
+    }
+}

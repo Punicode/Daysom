@@ -87,11 +87,11 @@ input.radio1{
 
 #nutx1{
     position: absolute;
-    top: -1px;
-    right: 23px;
+    top: 10px;
+    right: 10px;
     font-weight: bold;
     font-size: 17px;
-    background-color: rgb(70, 9, 9);
+    background-color:brown;
     color: aliceblue;
 }
 .nutkt:hover{
@@ -101,21 +101,28 @@ background-color: rgb(31, 187, 187);
     background-color: rgb(219, 230, 230);
 }
 #information1{
+    background-color: aquamarine;
     text-align: center;
-    width:400px;
+    width:500px;
     height: 200px;
     margin: auto;
-    background-image: url(info.png);
-    background-size: 115%;
-    background-position: -30px -101px;
-    border-radius: 30px;
+    border: solid gray;
+    border-radius: 20px;
     font-weight: bold;
-    font-size: 23px;
-    padding-top: 45px;
+    font-size: 20px;
     position: relative;
     display: none;
-    transition: 10s;
-    color: rgb(100, 14, 14);
+}
+#information1 .dau{
+    height:40px;
+    background-color: brown;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding-top: 8px;
+    padding-left: -10px;
+    font-weight: bold;
+    color: azure;
+
 }
 @media (max-width:576px){
     .head{
@@ -137,5 +144,43 @@ background-color: rgb(31, 187, 187);
         width: 100%;
         margin-left: 194px;
     }
+    .don_giuong{
+        margin-left: 100px!important;
+    }
 }
 
+.don_giuong{
+    position: relative;
+    width:500px;
+    height: 650px;
+    margin: auto;
+    background-color: aquamarine;
+    border-radius: 20px;
+    border: solid gray;
+    display: none;
+}
+.don_giuong h3{
+    padding-top: 30px;
+    text-align: center;
+}
+.don_giuong li{
+   margin-top: 20px;
+}
+.don_giuong .dau{
+    padding-top: 8px;
+    text-align: center;
+    font-weight: bold;
+    color: azure;
+    height: 40px;
+    background-color: brown;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.don_giuong .nutx2{
+    font-weight: bold;
+    color:white;
+    background-color: brown;
+    position: absolute;
+    top:10px;
+    right:10px;
+}
