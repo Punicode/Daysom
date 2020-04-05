@@ -130,24 +130,24 @@ background-color: rgb(31, 187, 187);
         margin-left: 145px;
     }
     #information1{
-        margin-left: 18px;
+        margin-left: 8px;
         margin-top: 100px;
         font-size: 32px!important;
         width: 700px;
         height: 300px;
     }
     .head img{
-        margin-left: -159px;
+        margin-left: -104px;
     }
     .sign_in{
         margin-left:180px;
     }
     .hello{
         width: 100%;
-        margin-left: 166px;
+        margin-left: 215px;
     }
     .don_giuong{
-        margin-left: 51px!important;
+        margin-left: 32px!important;
         width: 650px!important;
         font-size: 20px;
         height: 800px!important;
@@ -190,7 +190,7 @@ background-color: rgb(31, 187, 187);
     right:10px;
 }
 .an_sang{
-    width:650px;
+    width:1000px;
     margin: auto;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
@@ -198,6 +198,7 @@ background-color: rgb(31, 187, 187);
     flex-wrap: wrap;
     justify-content: space-between;
     display: none;
+    position: relative;
 }
 .an_sang img{
     width:300px;
@@ -237,7 +238,20 @@ background-color: rgb(31, 187, 187);
     color:green;
     transform: scale(1.1);
 }
+.mi_xao:hover h2{
+    color:green;
+    transform: scale(1.1);
+}
+#nutx3{
+    position: absolute;
+    top:-30px;
+    right:10px;
+}
 @media (max-width:576px){
+    .an_sang{
+        width:400px;
+    }
+
     .an_sang img{
         width: 500px;
         height: 300px;
@@ -245,5 +259,8 @@ background-color: rgb(31, 187, 187);
     }
     .an_sang h2{
         margin-left: 127px;
+    }
+    #nutx3{
+        right:-196px
     }
 }
