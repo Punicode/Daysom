@@ -111,3 +111,16 @@ background-color: rgb(31, 187, 187);
     border-radius: 30px;
     display: none;
 }
+@media (max-width:576px){
+    .sign_in{
+        margin-left: 183px;
+    }
+    .hello{
+    /* margin: auto; */
+    width: 797px;
+    }
+    .head{
+        width: 700px;
+        margin-left: 61px;
+    }
+}
