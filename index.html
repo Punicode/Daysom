@@ -17,21 +17,18 @@
                                 <td><input id="text_name" type="text" placeholder="Nhập tên"></td>
                         </tr>
                         <tr>
-                                <td><span>Password: </span></td>
-                                <td><input id="text_pass" type="text" placeholder="Nhập pass"> </td>
+                                <td><span>Hôm nay là: </span></td>
+                                <td>
+                                        <select name="" id="loai_ngay">
+                                                <option value="Ngày nghỉ">Ngày nghỉ</option>
+                                                <option value="Ngày bận">Ngày bận</option>
+                                        </select>
+                                 </td>
                         </tr>
                 </table>  
-                <input type="button" name="" id="button_pass" value="Sign in"onclick="password()">
-                <h6 id="tag_h6" style="color:red"></h5>
+                <input type="button" name="" id="button_pass" value="Sign in"onclick="loai_ngay()">
         </div>
         <div class="hello" id="hello"></div>
-    <div id="information1">
-        <div class="dau">Điểm danh, khích lệ và động viên ae</div>
-        <input type="button"value="X"id="nutx1"onclick="khoi1(1)">
-        Hãy điểm danh vào nhóm để mọi người biết bạn đã dậy<br>
-        Hãy khích lệ mọi người để ngày mới có thật nhiều năng lượng<br>
-        bạn nhé
-    </div>
     <div class="container" id="container">
         <div class="khoi"> 
                        
@@ -77,73 +74,30 @@
         </div>
         <input type="button" value="KIỂM TRA" onclick="kt()" class="nutkt">
     </div>
-    <div class="don_giuong"id="don_giuong">
-            <input type="button"value="X"id="nutx2"class="nutx2"onclick="khoi2(1)">
-            <div class="dau">Dọn giường, nơi làm việc ngăn nắp,nhà ở</div>
-            <h3>Chỉ mất vài phút thực hiện các công đoạn xếp chăn, kê lại gối, kéo rèm cửa sổ, Bạn sẽ nhận được nhiều lợi ích đáng kinh
-        ngạc:</h3>
-        <ul>
-                <li><b>Nâng cao sự tự hào: </b>Nếu bạn vệ sinh giường vào mỗi buổi sáng, có nghĩa bạn đã hoàn thành nhiệm vụ đầu tiên trong ngày. Điều đó sẽ tạo cho
-                bạn cảm giác tự hào, cũng như có tác dụng khuyến khích bạn tiếp tục hoàn thành các nhiệm vụ khác dễ dàng hơn".</li>
-                <li><b>Nâng cao sự tự hào: </b>Yếu tố quyết định phòng ngủ đẹp hay không chính là sự gọn gàng, ngăn nắp trên chiếc giường</li>
-                <li><b>Thúc đẩy năng suất làm việc: </b>Những thói quen tốt được tích lũy ngày qua ngày góp phần hình thành nên cảm giác hạnh phúc và từ đó khiến chúng ta trở
-                nên mạnh mẽ, bản lĩnh hơn trong các kỹ năng giải quyết công việc.</li>
-                <li><b>Giảm stress và cải thiện tâm trạng: </b>Thật khó mà bình tĩnh hay thoải mái khi nhìn thấy một cái giường ngổn ngang chăn, gối. Một chiếc giường ngăn nắp không
-                cần phải đạt đúng tiêu chuẩn nhà binh, mà chỉ cần gọn gàng và sạch sẽ là đủ. Khi bước vào căn phòng, nhìn thấy giường
-                chiếu tươm tất, thơm tho bạn sẽ có cảm giác được quan tâm, chăm sóc, từ đó giúp nâng cao tâm trạng.</li>
-        </ul>
-    </div>
-<div class="an_sang" id="an_sang">
-        <input type="button" name="" id="nutx3"value="X"onclick="khoi3(1)">
-        <div class="com_rang">
-                <img src="comrang2.jpg" alt="">
-                <h2>Cơm Rang</h2>
+  <div class="ngay_ban" id="ngay_ban">
+        <div class="khoi">
+        
+                <input id="nut11" type="button" class="nut1" value="Dậy trước 6:30p" onclick="khoi1(0)">
+                <input type="checkbox" class="radio1" id="check11" onclick="doiborder1()">
         </div>
-        <div class="chao">
-                <img src="chao2.jpg" alt="">
-                <h2>Cháo</h2>
+        <div class="khoi">
+                <input id="nut12" type="button" class="nut1" value="Dọn giường, nơi làm việc ngăn nắp,nhà ở" onclick="khoi2(0)">
+                <input type="checkbox" class="radio1" id="check12" onclick="doiborder1()">
         </div>
-        <div class="banh_mi">
-                <img src="banh_mi.png" alt="">
-                <h2>Bánh mì</h2>
+        <div class="khoi">
+                <input id="nut13" type="button" class="nut1" value="Uống một ly nước lớn ấm or nước chanh ấm">
+                <input type="checkbox" class="radio1" id="check13" onclick="doiborder1()">
         </div>
-        <div class="xoi">
-                <img src="xoi.jpg" alt="">
-                <h2>Xôi thịt</h2>
+        <div class="khoi">
+                <input id="nut14" type="button" class="nut1" value="Tập thể dục+nghe một bản nhạc ">
+                <input type="checkbox" class="radio1" id="check14" onclick="doiborder1()">
         </div>
-        <div class="pho">
-                <img src="canh_ca.jpg" alt="">
-                <h2>Phở</h2>
+        <div class="khoi">
+                <input id="nut15" type="button" class="nut1" value="Chuẩn bị cho buổi học tập hăng say nào!">
+                <input type="checkbox" class="radio1" id="check15" onclick="doiborder1()">
         </div>
-        <div class="mi">
-                <img src="mi_tom.jpg" alt="">
-                <h2>Mì</h2>
-        </div>
-        <div class="mi_xao">
-                <img src="mi_xao.jpg" alt="">
-                <h2>Mì xào thịt bò</h2>
-        </div>
-        <div class="mi_xao">
-                <img src="bunbo.jpg" alt="">
-                <h2>Bùn bò cà chua</h2>
-        </div>
-        <div class="mi_xao">
-                <img src="banh_mi_chao.jpg" alt="">
-                <h2>Bánh mì chảo</h2>
-        </div>
-        <div class="mi_xao">
-                <img src="mien.jpg" alt="">
-                <h2>Miến thịt bằm</h2>
-        </div>
-        <div class="mi_xao">
-                <img src="mien_ga.jpg" alt="">
-                <h2>Miến gà</h2>
-        </div>
-        <div class="mi_xao">
-                <img src="banh_cuon.jpg" alt="">
-                <h2>Bánh cuốn</h2>
-        </div>
-</div>
+        <input type="button" value="KIỂM TRA" onclick="kt1()" class="nutkt">
+  </div>
     <script src="1.js"></script>
 </body>
 </html>

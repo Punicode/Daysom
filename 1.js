@@ -1,13 +1,3 @@
-function khoi1(a){
-    if(a==0){
-        document.getElementById("information1").style.display="block";
-        document.getElementById("container").style.display="none";
-    }
-    else{
-        document.getElementById("information1").style.display = "none";
-        document.getElementById("container").style.display = "block";
-    }
-}
 function kt(){
     var k=0;
     if(document.getElementById("check1").checked)k++;
@@ -107,35 +97,72 @@ function doiborder(){
         document.getElementById("nut10").style.padding = "20px";
     }
 }
-function password(){
-    var pass = document.getElementById("text_pass").value;
+function loai_ngay(){
+    var pass = document.getElementById("loai_ngay").value;
     var ten=document.getElementById("text_name").value;
-    if(pass=="04042020"){
+    if (pass =="Ngày nghỉ"){
         document.getElementById("sign_in").style.display="none";
         document.getElementById("container").style.display="block";
         document.getElementById("hello").innerHTML = "Chào " +ten+" ! Chúc "+ten+" một ngày tốt lành!";
     }
     else{
-        document.getElementById("tag_h6").innerHTML="sai pass";
+        document.getElementById("sign_in").style.display = "none";
+        document.getElementById("ngay_ban").style.display = "block";
+        document.getElementById("hello").innerHTML = "Chào " + ten + " ! Chúc " + ten + " một ngày học tập vui vẻ!";
     }
 }
-function khoi2(a) {
-    if (a == 0) {
-        document.getElementById("don_giuong").style.display = "block";
-        document.getElementById("container").style.display = "none";
+function kt1() {
+    var k = 0;
+    if (document.getElementById("check11").checked) k++;
+    if (document.getElementById("check12").checked) k++;
+    if (document.getElementById("check13").checked) k++;
+    if (document.getElementById("check14").checked) k++;
+    if (document.getElementById("check15").checked) k++;
+    if (k < 5 && k >= 3)
+        alert("CHÚC MỪNG BẠN ĐẠT ĐƯỢC " + k + "/5. HÃY CỐ GẮNG ĐỂ HOÀN THIỆN HƠN NHÉ");
+    else if (k == 5) alert("Perfect! " + k + "/5");
+    else alert(k + "/5 Hơi buồn! Hãy cố gắng lên nào!");
+}
+function doiborder1() {
+    if (document.getElementById("check11").checked) {
+        document.getElementById("nut11").style.border = " 5px solid green";
+        document.getElementById("nut11").style.padding = "15px";
     }
     else {
-        document.getElementById("don_giuong").style.display = "none";
-        document.getElementById("container").style.display = "block";
+        document.getElementById("nut11").style.border = "none";
+        document.getElementById("nut11").style.padding = "20px";
     }
-}
-function khoi3(a) {
-    if (a == 0) {
-        document.getElementById("an_sang").style.display = "flex";
-        document.getElementById("container").style.display = "none";
+    if (document.getElementById("check12").checked) {
+        document.getElementById("nut12").style.border = " 5px solid green";
+        document.getElementById("nut12").style.padding = "15px";
     }
     else {
-        document.getElementById("an_sang").style.display = "none";
-        document.getElementById("container").style.display = "block";
+        document.getElementById("nut12").style.border = "none";
+        document.getElementById("nut12").style.padding = "20px";
+    }
+    if (document.getElementById("check13").checked) {
+        document.getElementById("nut13").style.border = " 5px solid green";
+        document.getElementById("nut13").style.padding = "15px";
+    }
+    else {
+        document.getElementById("nut13").style.border = "none";
+        document.getElementById("nut13").style.padding = "20px";
+    }
+    if (document.getElementById("check14").checked) {
+        document.getElementById("nut14").style.border = " 5px solid green";
+        document.getElementById("nut14").style.padding = "15px";
+    }
+    else {
+        document.getElementById("nut14").style.border = "none";
+        document.getElementById("nut14").style.padding = "20px";
+    }
+    if (document.getElementById("check15").checked) {
+        document.getElementById("nut15").style.border = " 5px solid green";
+        document.getElementById("nut15").style.padding = "15px";
+    }
+    else {
+        document.getElementById("nut15").style.border = "none";
+        document.getElementById("nut15").style.padding = "20px";
     }
 }
+
